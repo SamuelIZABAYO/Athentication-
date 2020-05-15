@@ -212,12 +212,13 @@ public class Loginview extends javax.swing.JInternalFrame {
               we.show();
                     
             }
-            else{
+            else if(!pass.equals(pa)){
             JOptionPane.showMessageDialog(null,"Wrong input");
             }
         } 
         catch (SQLException ex) {
             Logger.getLogger(Loginview.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null,"Wrong input");
         }
         
         
